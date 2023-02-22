@@ -1,9 +1,159 @@
 body {
-  width: 5px;
-  padding: 5px;
-  margin: 5px;
-  font-size: 12px;
+  width: 1440px;
+  font-family: "Raleway", sans-serif;
 }
-.fa-heart {
-  font-size: 100px;
+
+.header {
+  display: flex;
+}
+
+.accueil {
+  width: 80%;
+  margin-left: 55px;
+  margin-top: 44px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 63px;
+}
+
+.logo img {
+  width: 61.09px;
+  height: 19px;
+}
+
+.recherche {
+  width: 40%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dot {
+  background-color: #f2f2f2;
+  width: 13%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.bar {
+  width: 50%;
+  height: 100%;
+}
+
+.bar input {
+  border: none;
+  height: 100%;
+  outline: none;
+  font-size: 18px;
+}
+
+.glass {
+  height: 100%;
+  width: 37%;
+}
+
+.glass button {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #0065fc;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #0065fc;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.filtres {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.filtres button {
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  width: 20%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 17px;
+  background-color: white;
+  font-weight: 700;
+}
+
+.filtres i {
+  color: #0065fc;
+}
+
+.filtres button:hover {
+  background-color: #deebff;
+}
+
+.filtres h2 {
+  font-size: 18px;
+}
+
+.info {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.info i {
+  color: #0065fc;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info p {
+  margin-left: 11px;
+}
+
+.nav {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  border-top: solid;
+  border-color: white;
+  height: 23%;
+  display: flex;
+  align-items: center;
+}
+
+.nav a:hover {
+  border-color: #0065fc;
+  color: #0065fc;
+}
+
+.main {
+  margin-top: 114px;
+  margin-left: 55px;
+  width: 880px;
+  height: 626px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+}
+
+.main h1 {
+  font-size: 22px;
+  margin-left: 40px;
 }
