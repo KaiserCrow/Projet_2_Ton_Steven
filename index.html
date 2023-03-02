@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="header">
+    <header>
       <div class="accueil">
         <div class="logo">
-          <img src="/Images Booki/logo/Booki.png" alt="" />
+          <img src="/Images/logo/Booki.png" alt="" />
         </div>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
@@ -41,29 +41,33 @@
         </div>
         <div class="filtres">
           <h2>Filtres</h2>
-          <button><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-          <button><i class="fa-solid fa-child"></i>Familial</button>
-          <button><i class="fa-solid fa-heart"></i>Romantique</button>
-          <button><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+          <button id="eco">
+            <i class="fa-solid fa-money-bill-wave"></i>Économique
+          </button>
+          <button id="fam"><i class="fa-solid fa-child"></i>Familial</button>
+          <button id="rom"><i class="fa-solid fa-heart"></i>Romantique</button>
+          <button id="ani">
+            <i class="fa-solid fa-dog"></i>Animaux autorisés
+          </button>
         </div>
         <div class="info">
           <i class="fa-solid fa-info"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </div>
-      <div class="nav">
+      <nav>
         <a href="#hebergements">Hébergements</a>
         <a href="#activites">Activités</a>
-      </div>
-    </div>
-    <div class="main">
+      </nav>
+    </header>
+    <main>
       <div class="article-hebergements" id="hebergements">
         <h2>Hébergements à Marseille</h2>
         <div class="section-hebergements">
           <a href="#">
             <div class="card">
               <img
-                src="/Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                src="/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
@@ -74,6 +78,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
@@ -81,7 +86,7 @@
           <a href="#">
             <div class="card">
               <img
-                src="/Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                src="/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
@@ -92,6 +97,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
@@ -99,7 +105,7 @@
           <a href="#">
             <div class="card">
               <img
-                src="/Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                src="/Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
@@ -110,6 +116,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
@@ -117,7 +124,7 @@
           <a href="#">
             <div class="card">
               <img
-                src="/Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                src="/Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
@@ -128,6 +135,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
@@ -135,7 +143,7 @@
           <a href="#">
             <div class="card">
               <img
-                src="/Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                src="/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
@@ -146,6 +154,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
@@ -153,7 +162,7 @@
           <a href="#">
             <div class="card">
               <img
-                src="/Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                src="/Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
@@ -164,6 +173,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
@@ -180,7 +190,7 @@
           <a href="#">
             <div class="card-2">
               <img
-                src="/Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                src="/Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container-2">
@@ -191,6 +201,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
@@ -198,7 +209,7 @@
           <a href="#">
             <div class="card-2">
               <img
-                src="/Images Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                src="/Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container-2">
@@ -209,14 +220,15 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
           </a>
-          <a href="">
+          <a href="#">
             <div class="card-2">
               <img
-                src="/Images Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                src="/Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container-2">
@@ -227,20 +239,21 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
                 </div>
               </div>
             </div>
           </a>
         </div>
       </div>
-    </div>
+    </main>
     <div class="article-activités" id="activites">
       <h2>Activités à Marseille</h2>
       <div class="section-activités">
         <a href="#">
           <div class="card-3">
             <img
-              src="/Images Booki/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              src="/Images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="activité"
             />
             <div class="container-3">
@@ -251,7 +264,7 @@
         <a href="#">
           <div class="card-3">
             <img
-              src="/Images Booki/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              src="/Images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="activité"
             />
             <div class="container-3">
@@ -262,7 +275,7 @@
         <a href="#">
           <div class="card-3">
             <img
-              src="/Images Booki/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              src="/Images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt="activité"
             />
             <div class="container-3">
@@ -273,7 +286,7 @@
         <a href="#">
           <div class="card-3">
             <img
-              src="/Images Booki/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              src="/Images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               alt="activité"
             />
             <div class="container-3">
@@ -283,29 +296,29 @@
         </a>
       </div>
     </div>
-    <div class="footer">
+    <footer>
       <div class="liste">
         <ul>
           <li><h3>À propos</h3></li>
-          <a href="#"><li>Fonctionnement du site</li></a>
-          <a href="#"><li>Conditions générales</li></a>
-          <a href="#"><li>Données et confidentialité</li></a>
+          <li>Fonctionnement du site</li>
+          <li>Conditions générales</li>
+          <li>Données et confidentialité</li>
         </ul>
       </div>
       <div class="liste">
         <ul>
           <li><h3>Nos hébergements</h3></li>
-          <a href="#"><li>Charte qualité</li></a>
-          <a href="#"><li>Proposer votre hôtel</li></a>
+          <li>Charte qualité</li>
+          <li>Proposer votre hôtel</li>
         </ul>
       </div>
       <div class="liste">
         <ul>
           <li><h3>Assistance</h3></li>
-          <a href="#"><li>Centre d’aide</li></a>
-          <a href="#"><li>Nous contacter</li></a>
+          <li>Centre d’aide</li>
+          <li>Nous contacter</li>
         </ul>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

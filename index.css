@@ -1,9 +1,10 @@
 body {
   width: 1440px;
   font-family: "Raleway", sans-serif;
+  margin: auto;
 }
 
-.header {
+header {
   display: flex;
 }
 
@@ -13,7 +14,7 @@ body {
   margin-top: 44px;
 }
 
-.header h1 {
+header h1 {
   font-size: 22px;
   font-weight: 700;
   margin-top: 63px;
@@ -25,8 +26,8 @@ body {
 }
 
 .recherche {
-  width: 40%;
-  height: 25%;
+  width: 442px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -72,7 +73,7 @@ body {
 
 .filtres {
   display: flex;
-  justify-content: space-between;
+  gap: 36px;
   width: 100%;
   margin-top: 32px;
 }
@@ -80,7 +81,7 @@ body {
 .filtres button {
   border: 2px solid #d9d9d9;
   border-radius: 25px;
-  width: 20%;
+
   cursor: pointer;
   display: flex;
   justify-content: space-evenly;
@@ -88,6 +89,22 @@ body {
   font-size: 17px;
   background-color: white;
   font-weight: 700;
+}
+
+#eco {
+  width: 176px;
+}
+
+#fam {
+  width: 136px;
+}
+
+#rom {
+  width: 166px;
+}
+
+#ani {
+  width: 226px;
 }
 
 .filtres i {
@@ -123,33 +140,36 @@ body {
   margin-left: 11px;
 }
 
-.nav {
-  width: 20%;
+nav {
+  width: 25%;
   display: flex;
   justify-content: space-around;
+  background-color: #0065fc;
 }
 
-.nav a {
+nav a {
   text-decoration: none;
   color: black;
   border-top: solid;
   border-color: white;
+  width: 100%;
   height: 23%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.nav a:hover {
+nav a:hover {
   border-color: #0065fc;
   color: #0065fc;
 }
 
-.main {
+main {
   display: flex;
 }
 
 .article-hebergements {
-  margin-top: 114px;
+  margin-top: 39px;
   margin-left: 55px;
   width: 880px;
   height: 626px;
@@ -199,17 +219,26 @@ body {
 
 .container h3 {
   font-size: 16px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .container p {
   font-size: 14px;
   text-decoration: none;
+  margin-top: 9px;
+  margin-bottom: 0px;
 }
 
 .fa-star {
   color: #0065fc;
   width: 12px;
   height: 12px;
+  margin-top: 9px;
+}
+
+#star-hidden {
+  color: #f2f2f2;
 }
 
 .article-hebergements button {
@@ -230,7 +259,7 @@ body {
   width: 420px;
   height: 625px;
   background-color: #f2f2f2;
-  margin-top: 114px;
+  margin-top: 39px;
   margin-left: 40px;
   border-radius: 20px;
 }
@@ -283,7 +312,7 @@ body {
 }
 
 .stars-2 {
-  margin-top: 34px;
+  margin-top: 0px;
 }
 
 .container-2 {
@@ -341,7 +370,7 @@ body {
   margin-left: 19px;
 }
 
-.footer {
+footer {
   width: 1339px;
   height: 225px;
   background-color: #f2f2f2;
@@ -351,27 +380,111 @@ body {
   justify-content: space-around;
 }
 
-.footer ul {
+footer ul {
   list-style: none;
   list-style-position: inside;
 }
 
-.footer ul a {
+footer ul a {
   text-decoration: none;
 }
 
-.footer ul li {
+footer ul li {
   color: initial;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
+  margin-top: 12px;
 }
-.footer ul li h3 {
+
+footer ul li h3 {
   font-weight: 700;
   font-size: 18px;
 }
+
 .liste {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    width: 1024px;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  nav {
+    margin-right: 500px;
+  }
+  .article-hebergements {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .aside {
+    width: 880px;
+    height: 278px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .card-2 {
+    width: 252px;
+  }
+
+  .card-2 img {
+    width: 106px;
+    height: 144px;
+  }
+
+  .article-populaire {
+    gap: 579px;
+    width: 100%;
+    justify-content: initial;
+  }
+
+  .container-2 h3 {
+    width: 111px;
+    font-size: 14px;
+  }
+
+  .container-2 p {
+    margin-top: 7px;
+    font-size: 13px;
+  }
+
+  .article-activités {
+    margin-left: 81px;
+  }
+  .card-3 {
+    width: 182px;
+    height: 267px;
+    margin-top: 34px;
+  }
+
+  .card-3 img {
+    width: 182px;
+    height: 211px;
+  }
+
+  footer {
+    width: 880px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+
+  .logo {
+    margin-left: 157px;
+  }
 }
