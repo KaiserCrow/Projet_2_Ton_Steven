@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bookit</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -22,57 +22,53 @@
   </head>
   <body>
     <header>
-      <div class="accueil">
-        <div class="logo">
-          <img src="/Images/logo/Booki.png" alt="" />
-        </div>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-        <div class="recherche">
-          <div class="dot">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div class="bar">
-            <input type="text" placeholder="Marseille, France" />
-          </div>
-          <div class="glass">
-            <button>Rechercher</button>
-          </div>
-        </div>
-        <div class="filtres">
-          <h2>Filtres</h2>
-          <button id="eco">
-            <i class="fa-solid fa-money-bill-wave"></i>Économique
-          </button>
-          <button id="fam"><i class="fa-solid fa-child"></i>Familial</button>
-          <button id="rom"><i class="fa-solid fa-heart"></i>Romantique</button>
-          <button id="ani">
-            <i class="fa-solid fa-dog"></i>Animaux autorisés
-          </button>
-        </div>
-        <div class="info">
-          <i class="fa-solid fa-info"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-      </div>
+      <div class="logo"><img src="/Images/logo/Booki.png" alt="" /></div>
       <nav>
-        <a href="#hebergements">Hébergements</a>
-        <a href="#activites">Activités</a>
+        <a href="#heb">Hébergements</a>
+        <a href="#act">Activités</a>
       </nav>
     </header>
+    <div class="accueil">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre-ville ou en pleine nature</p>
+      <div class="recherche">
+        <div class="dot">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="bar">
+          <input type="text" placeholder="Marseille, France" />
+        </div>
+        <div class="glass">
+          <button>Rechercher</button>
+        </div>
+      </div>
+      <div class="filtres">
+        <h2>Filtres</h2>
+        <button id="eco">
+          <i class="fa-solid fa-money-bill-wave"></i>Économique
+        </button>
+        <button id="fam"><i class="fa-solid fa-child"></i>Familial</button>
+        <button id="rom"><i class="fa-solid fa-heart"></i>Romantique</button>
+        <button id="pep"><i class="fa-solid fa-fire"></i> Nos pépites</button>
+      </div>
+      <div class="info">
+        <i class="fa-solid fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </div>
     <main>
-      <div class="article-hebergements" id="hebergements">
+      <div class="hebergements" id="heb">
         <h2>Hébergements à Marseille</h2>
         <div class="section-hebergements">
           <a href="#">
             <div class="card">
               <img
-                src="/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                src="/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
-                <h3>Auberge La Canebière</h3>
-                <p>Nuit à partir de 25€</p>
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partir de 52€</p>
                 <div class="stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -86,12 +82,12 @@
           <a href="#">
             <div class="card">
               <img
-                src="/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                src="/Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                 alt="chambre"
               />
               <div class="container">
-                <h3>Hôtel du port</h3>
-                <p>Nuit à partir de 52€</p>
+                <h3>Hôtel Chez Amina</h3>
+                <p>Nuit à partir de 96€</p>
                 <div class="stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -143,6 +139,25 @@
           <a href="#">
             <div class="card">
               <img
+                src="/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt="chambre"
+              />
+              <div class="container">
+                <h3>Auberge La Canebière</h3>
+                <p>Nuit à partir de 25€</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star" id="star-hidden"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <img
                 src="/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                 alt="chambre"
               />
@@ -159,30 +174,11 @@
               </div>
             </div>
           </a>
-          <a href="#">
-            <div class="card">
-              <img
-                src="/Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                alt="chambre"
-              />
-              <div class="container">
-                <h3>Hôtel Chez Amina</h3>
-                <p>Nuit à partir de 96€</p>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star" id="star-hidden"></i>
-                </div>
-              </div>
-            </div>
-          </a>
         </div>
-        <button>Afficher Plus</button>
+        <h4>Afficher Plus</h4>
       </div>
-      <div class="aside">
-        <div class="article-populaire">
+      <div class="populaire">
+        <div class="titre-populaire">
           <h2>Les plus populaires</h2>
           <i class="fa-solid fa-chart-line"></i>
         </div>
@@ -194,8 +190,8 @@
                 alt="chambre"
               />
               <div class="container-2">
-                <h3>Hôtel Le soleil du matin</h3>
-                <p>Nuit à partir de 128€</p>
+                <h3>Auberge la Canebière</h3>
+                <p>Nuit à partir de 25€</p>
                 <div class="stars-2">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -246,56 +242,56 @@
           </a>
         </div>
       </div>
-    </main>
-    <div class="article-activités" id="activites">
-      <h2>Activités à Marseille</h2>
-      <div class="section-activités">
-        <a href="#">
-          <div class="card-3">
-            <img
-              src="/Images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="activité"
-            />
-            <div class="container-3">
-              <h3>Vieux-Port</h3>
+      <div class="activités" id="activites">
+        <h2>Activités à Marseille</h2>
+        <div class="section-activités">
+          <a href="#">
+            <div class="card-3">
+              <img
+                src="/Images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="activité"
+              />
+              <div class="container-3">
+                <h3>Vieux-Port</h3>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card-3">
-            <img
-              src="/Images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-              alt="activité"
-            />
-            <div class="container-3">
-              <h3>Fort de Pomèguesn</h3>
+          </a>
+          <a href="#">
+            <div class="card-3">
+              <img
+                src="/Images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="activité"
+              />
+              <div class="container-3">
+                <h3>Fort de Pomèguesn</h3>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card-3">
-            <img
-              src="/Images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="activité"
-            />
-            <div class="container-3">
-              <h3>Parc national des Calanques</h3>
+          </a>
+          <a href="#">
+            <div class="card-3">
+              <img
+                src="/Images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="activité"
+              />
+              <div class="container-3">
+                <h3>Parc national des Calanques</h3>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card-3">
-            <img
-              src="/Images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-              alt="activité"
-            />
-            <div class="container-3">
-              <h3>Notre-Dame-de-la-Garde</h3>
+          </a>
+          <a href="#">
+            <div class="card-3">
+              <img
+                src="/Images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="activité"
+              />
+              <div class="container-3">
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
-    </div>
+    </main>
     <footer>
       <div class="liste">
         <ul>
