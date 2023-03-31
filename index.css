@@ -119,6 +119,16 @@ nav a:hover {
   height: 50px;
 }
 
+.filtres-1 {
+  display: flex;
+  gap: 10px;
+}
+
+.filtres-2 {
+  display: flex;
+  gap: 10px;
+}
+
 #eco {
   width: 176px;
 }
@@ -202,23 +212,22 @@ main {
 .section-hebergements {
   display: flex;
   margin: 0px 30px 0px 30px;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 3%;
 }
 
-.card {
-  width: 250px;
+.section-hebergements a {
+  width: 30%;
   height: 208px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+.section-hebergements img {
   object-fit: cover;
   width: 100%;
-  height: 124px;
+  height: 45%;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -275,7 +284,12 @@ main {
 
 .section-populaire a {
   display: flex;
-  justify-content: center;
+  margin-bottom: 10px;
+  width: 369px;
+  height: 144px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .titre-populaire {
@@ -293,15 +307,11 @@ main {
   color: #0065fc;
 }
 
-.card-2 {
+.section-populaire {
   display: flex;
-  width: 369px;
-  height: 144px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
-.card-2 img {
+
+.section-populaire img {
   object-fit: cover;
   width: 123px;
   height: 144px;
@@ -339,20 +349,21 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
-.card-3 {
-  width: 300px;
+.section-activités a {
+  width: 20%;
   border: 1px solid #f2f2f2;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card-3 h3 {
+.section-activités h3 {
   margin-left: 20px;
 }
 
-.card-3 img {
+.section-activités img {
   object-fit: cover;
   width: 100%;
   height: 380px;
@@ -381,6 +392,22 @@ footer ul li {
     width: 100%;
   }
 
+  #eco {
+    width: 166px;
+  }
+
+  #fam {
+    width: 126px;
+  }
+
+  #rom {
+    width: 156px;
+  }
+
+  #pep {
+    width: 156px;
+  }
+
   main {
     flex-wrap: wrap;
   }
@@ -400,11 +427,6 @@ footer ul li {
     height: auto;
   }
 
-  .section-populaire {
-    flex-wrap: nowrap;
-    padding-bottom: 30px;
-  }
-
   .titre-populaire {
     justify-content: space-between;
   }
@@ -418,6 +440,8 @@ footer ul li {
   }
 
   .section-populaire {
+    flex-wrap: nowrap;
+    padding-bottom: 30px;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -425,24 +449,20 @@ footer ul li {
     margin: 0px 20px 0px 20px;
   }
 
-  .card {
-    width: 268px;
+  .section-populaire a {
+    width: 30%;
   }
 
-  .card-2 {
-    width: 275px;
+  .section-populaire a img {
+    width: 40%;
   }
 
-  .card-3 {
-    width: 195px;
-  }
-
-  .card-3 img {
+  .section-activités img {
     height: 200px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header {
     flex-wrap: wrap;
     margin: 30px 0px 60px 0px;
@@ -497,25 +517,25 @@ footer ul li {
   }
 
   .filtres {
-    gap: 10px;
-    row-gap: 20px;
+    gap: 20px;
+    row-gap: 10px;
     justify-content: center;
   }
 
   #eco {
-    width: 160px;
+    width: 150px;
   }
 
   #fam {
-    width: 160px;
+    width: 150px;
   }
 
   #rom {
-    width: 160px;
+    width: 150px;
   }
 
   #pep {
-    width: 160px;
+    width: 150px;
   }
 
   main {
@@ -530,18 +550,20 @@ footer ul li {
   .section-hebergements {
     gap: 15px;
     margin: 0px 0px 0px 0px;
+    justify-content: center;
   }
 
-  .card {
-    width: 300px;
+  .section-hebergements a {
+    width: 80%;
   }
 
   .section-populaire {
     gap: 15px;
+    margin: 0px 0px 0px 0px;
   }
 
-  .card-2 {
-    width: 300px;
+  .section-populaire a {
+    width: 80%;
   }
 
   .activités {
@@ -556,8 +578,8 @@ footer ul li {
     gap: 15px;
   }
 
-  .card-3 {
-    width: 300px;
+  .section-activités a {
+    width: 80%;
   }
 
   footer {
