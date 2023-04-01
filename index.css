@@ -334,10 +334,6 @@ main {
   line-height: 16px;
 }
 
-.stars-2 {
-  margin-top: -10px;
-}
-
 .activités {
   margin-top: 65px;
   flex-grow: 0;
@@ -459,6 +455,14 @@ footer ul li {
 
   .section-populaire a img {
     width: 40%;
+  }
+  
+  .container-2 h3 {
+    font-size: 15px;
+  }
+
+  .container-2 p {
+    margin-bottom: 0px;
   }
 
   .section-activités img {
