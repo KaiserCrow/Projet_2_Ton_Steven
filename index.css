@@ -334,6 +334,10 @@ main {
   line-height: 16px;
 }
 
+.stars-2 {
+  margin-top: -10px;
+}
+
 .activités {
   margin-top: 65px;
   flex-grow: 0;
